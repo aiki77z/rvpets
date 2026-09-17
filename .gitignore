@@ -17,5 +17,8 @@ joy/**
 seulgi/**
 !seulgi/spritesheet.webp
 
+wendy/**
+!wendy/spritesheet.webp
+
 yeri/**
 !yeri/spritesheet.webp

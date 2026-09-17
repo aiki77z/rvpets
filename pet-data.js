@@ -30,6 +30,16 @@ window.BND_PETS = [
     ready: true
   },
   {
+    id: "wendy",
+    name: "Wendy",
+    member: "Red Velvet",
+    animalType: "RedVelvet desktop pet",
+    spritePath: "./wendy/spritesheet.webp?v=20260917-1",
+    bubbleText: ["Wendy 在这里。", "喝水、呼吸、继续。", "今天也清清亮亮地完成吧。"],
+    theme: { primary: "#eff8ff", secondary: "#8abde6", accent: "#2d5f88" },
+    ready: true
+  },
+  {
     id: "yeri",
     name: "Yeri",
     member: "Red Velvet",

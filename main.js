@@ -28,6 +28,7 @@ const APP_PET_OPTIONS = [
   { id: "irene", label: "Irene" },
   { id: "joy", label: "Joy" },
   { id: "seulgi", label: "Seulgi" },
+  { id: "wendy", label: "Wendy" },
   { id: "yeri", label: "Yeri" }
 ];
 const APP_DEFAULT_PET_ID = "irene";
