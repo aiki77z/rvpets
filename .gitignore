@@ -1,0 +1,21 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Keep only the packaged pet assets needed by GitHub builds
+irene/**
+!irene/spritesheet.webp
+
+joy/**
+!joy/spritesheet.webp
+
+seulgi/**
+!seulgi/spritesheet.webp
+
+yeri/**
+!yeri/spritesheet.webp

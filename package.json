@@ -1,0 +1,83 @@
+{
+  "name": "redvelvet-pets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desktop pet shell wired to finalized RedVelvet Pets atlases.",
+  "author": "RedVelvet Pets",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "serve:ipad": "python -m http.server 4173 --bind 0.0.0.0",
+    "dist:win": "electron-builder --win --x64 --publish never",
+    "dist:mac": "electron-builder --mac dmg zip"
+  },
+  "devDependencies": {
+    "electron": "22.3.27",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.redvelvet.pets.desktop",
+    "productName": "RedVelvet Pets",
+    "directories": {
+      "output": "dist"
+    },
+    "npmRebuild": false,
+    "files": [
+      "app.js",
+      "build/icon.png",
+      "build/icon.ico",
+      "build/icon.icns",
+      "index.html",
+      "ipad.html",
+      "ipad-memo.css",
+      "ipad-memo.js",
+      "main.js",
+      "manifest.webmanifest",
+      "package.json",
+      "pet-data.js",
+      "preload.js",
+      "styles.css",
+      "sw.js",
+      "irene/spritesheet.webp",
+      "joy/spritesheet.webp",
+      "seulgi/spritesheet.webp",
+      "yeri/spritesheet.webp"
+    ],
+    "extraResources": [
+      {
+        "from": "build/icon.ico",
+        "to": "icon.ico"
+      },
+      {
+        "from": "build/icon.icns",
+        "to": "icon.icns"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icon.icns",
+      "category": "public.app-category.entertainment"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "RedVelvet-Pets-win11-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "RedVelvet-Pets-win11-${version}.${ext}"
+    }
+  }
+}

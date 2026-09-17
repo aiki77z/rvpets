@@ -1,0 +1,23 @@
+{
+  "name": "RedVelvet Pets",
+  "short_name": "RedVelvet Pets",
+  "description": "Red Velvet pet companion for desktop and iPad.",
+  "start_url": "./ipad.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff3f8",
+  "theme_color": "#fff3f8",
+  "icons": [
+    {
+      "src": "./build/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./build/icon.ico",
+      "sizes": "64x64 128x128 256x256",
+      "type": "image/x-icon"
+    }
+  ]
+}
